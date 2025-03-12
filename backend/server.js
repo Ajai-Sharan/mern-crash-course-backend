@@ -6,7 +6,16 @@ import productRouter from './route/product.route.js';
 
 dotenv.config();
 
+
 const app = express();
+
+app.use(cors({
+    origin: 'https://mern-crash-course-frontend.vercel.app', // Allow requests from this origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow cookies to be sent
+    optionsSuccessStatus: 204
+}));
+  
 
 app.use(cors());
 app.use(express.json());
@@ -14,7 +23,7 @@ app.use(express.json());
 
 app.use('/api/product', productRouter);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.X_ZOHO_CATALYST_LISTEN_PORT || 5000;
 
 app.listen(PORT, () => {
     connectDB();
