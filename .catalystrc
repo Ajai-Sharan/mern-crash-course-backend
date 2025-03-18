@@ -10,11 +10,11 @@
   "projects": [
     {
       "idx": 1,
-      "id": "15478000000009123",
-      "name": "backend-mern",
+      "id": "15478000000009179",
+      "name": "backend-mern-final",
       "domain": {
-        "id": "50025389021",
-        "name": "backend-mern-60038618432.development"
+        "id": "50025389578",
+        "name": "backend-mern-final-60038618432.development"
       },
       "timezone": "Asia/Kolkata",
       "env": [

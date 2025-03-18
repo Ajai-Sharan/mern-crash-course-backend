@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env nodemon backend/server.js",
+    "dev": "nodemon server.js",
     "build": "npm install",
-    "start": "cross-env node backend/server.js"
+    "start": "node server.js"
   },
   "type": "module",
   "keywords": [],

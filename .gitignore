@@ -14,6 +14,12 @@ dist-ssr
 
 .env
 
+.catalystrc
+.catalystrc.json
+catalyst.config.js
+app.config.json
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

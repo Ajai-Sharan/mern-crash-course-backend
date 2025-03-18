@@ -9,15 +9,14 @@ dotenv.config();
 
 const app = express();
 
+
+
 app.use(cors({
-    origin: 'https://mern-crash-course-frontend.vercel.app', // Allow requests from this origin
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Allow cookies to be sent
-    optionsSuccessStatus: 204
+    origin: 'https://mern-crash-course-frontend.vercel.app',
+    methods : ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, 
 }));
   
-
-app.use(cors());
 app.use(express.json());
 
 
